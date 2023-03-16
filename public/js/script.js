@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const qrCodeElement = document.getElementById('qrcode');
-  const url = 'http://192.168.1.47:3000/ar.html?modelUrl=models/model1/scene.gltf';
+  const url = 'https://sleepy-taiga-62999.herokuapp.com/ar.html?modelUrl=models/model1/scene.gltf';
 
   new QRCode(qrCodeElement, {
     text: url,
