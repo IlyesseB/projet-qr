@@ -2,12 +2,15 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/ar', (req, res) => {
-  res.sendFile(__dirname + '/public/ar.html');
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+app.get('/ar', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/ar.html'));
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
