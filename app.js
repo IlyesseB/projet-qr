@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/ma-route', (req, res) => {
-  res.send('Bienvenue sur ma route personnalisée!');
+app.get('/', (req, res) => {
+  res.send('Bienvenue sur la page d\'accueil!');
 });
 
 const port = process.env.PORT || 3000;
