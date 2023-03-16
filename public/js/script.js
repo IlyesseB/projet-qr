@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const qrCodeElement = document.getElementById('qrcode');
-  const url = 'https://www.ilyessebouraghda.fr/ar.html?modelUrl=models/model1/scene.gltf';
+  const url = 'https://www.ilyessebouraghda.fr/ar.html'; 
 
   new QRCode(qrCodeElement, {
     text: url,
