@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+
+app.get('/ma-route', (req, res) => {
+  res.send('Bienvenue sur ma route personnalisée!');
+});
+
 const port = process.env.PORT || 3000;
-
-app.use(express.static('public'));
-
 app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
