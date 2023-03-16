@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const qrCodeElement = document.getElementById('qrcode');
-  const url = 'https://sleepy-taiga-62999.herokuapp.com/ar?modelUrl=models/model1/scene.gltf';
+  const url = 'https://www.ilyessebouraghda.fr/ar.html?modelUrl=models/model1/scene.gltf';
 
   new QRCode(qrCodeElement, {
     text: url,
