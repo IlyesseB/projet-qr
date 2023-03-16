@@ -4,9 +4,10 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/ma-route', (req, res) => {
-  res.send('Bienvenue sur ma route personnalisée!');
+app.get('/ar', (req, res) => {
+  res.sendFile(__dirname + '/public/ar.html');
 });
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
